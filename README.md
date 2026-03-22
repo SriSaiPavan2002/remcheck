@@ -1,7 +1,10 @@
-# remcheck
+# remcheck - Automated Remediation Checker
 
-## Run examples
-python src/remcheck.py --finding finding_examples/sqli_example.json --output ./evidence/
-# remcheck
-# remcheck
-# remcheck
+**Complete submission for the "Build an Automated Remediation Checker" challenge.**
+
+## How to install and run
+```bash
+cd remcheck
+python -m venv venv
+source venv/bin/activate
+pip install typer rich requests openai
