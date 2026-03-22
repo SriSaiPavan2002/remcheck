@@ -1,0 +1,20 @@
+{
+  "finding_id": "FIND-0042",
+  "type": "sql_injection",
+  "endpoint": "POST /api/v1/login",
+  "parameter": "username",
+  "base_url": "https://httpbin.org",
+  "auth": {
+    "type": "bearer",
+    "token": "eyJhbGciOiJSUzI1NiJ9..."
+  },
+  "baseline": {
+    "status_code": 404,
+    "response_hash": "12b6b36be9bd52d72587f75b3718b9d5979aaab9b1d1c27620463f330679dac5",
+    "response_time_p95": 2.0
+  },
+  "metadata": {
+    "db_engine": "mysql",
+    "original_payload": "' OR '1'='1"
+  }
+}
